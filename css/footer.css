@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+/* footer */
+#footer{
+    width: 100%;
+    background: #141414;
+}
+#footer .ft-inner{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 33px 0 33px;
+    position: relative;
+}
+#footer .ft-link{
+    padding-bottom: 23px;
+    display: flex;
+}
+#footer .ft-link li{
+    margin: 0 0 0 25px;
+    padding: 0 0 0 15px;
+    position: relative;
+}
+#footer .ft-link li:first-child{
+    padding: 0;
+    margin: 0;
+}
+#footer .ft-link li:after{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: #ffffff;
+    position: absolute;
+    left: -3px;
+    top: 50%;
+    margin-top: -3px;
+}
+#footer .ft-link li:first-child:after{
+    display: none;
+}
+#footer .ft-link li a{
+    text-decoration: none;
+    display: block;
+    color: #ffffff;
+    padding: 0 0 7px;
+    font-size: 15px;
+    line-height: 19px;
+    font-weight: 300;
+}
+#footer .ft-link li a:hover{
+    text-decoration: underline;
+}
+#footer .ft-link li:first-child a{
+    color: #ffa975;
+}
+#footer .ft-sns{
+    position: absolute;
+    right: 260px;
+    top: 27px;
+}
+#footer .ft-sns li{
+    margin-left: 7px;
+}
+#footer .ft-sns li:first-child{
+    margin-left: 0;
+}
+#footer .ft-sns li a{
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+    text-indent: -999999px;
+}
+#footer .ft-sns li.yt a{
+    background: url(../images/footer/ft-yt.png)no-repeat center center;
+}
+#footer .ft-sns li.fb a{
+    background: url(../images/footer/ft-fb.png)no-repeat center center;
+}
+#footer .ft-sns li.in a{
+    background: url(../images/footer/ft-in.png)no-repeat center center;
+}
+#footer .ft-sns li.nb a{
+    background: url(../images/footer/ft-nb.png)no-repeat center center;
+}
+#footer .ft-sns li.np a{
+    background: url(../images/footer/ft-np.png)no-repeat center center;
+}
+#footer .ft-sns li.tw a{
+    background: url(../images/footer/ft-tw.png)no-repeat center center;
+}
+#footer .ft-sns li.kt a{
+    background: url(../images/footer/ft-kt.png)no-repeat center center;
+}
+#footer .relate-site{
+    position: absolute;
+    right: 0;
+    top: 27px;
+    width: 237px;
+}
+#footer .relate-site form fieldset label select{
+    background: none;
+    border: none;
+    max-height: 210px;
+}
+#footer .relate-site form fieldset label select option{
+    font-size: 14px;
+    padding: 0 7%;
+    height: 35px;
+    position: relative;
+    border: 1px solid #7b7b7b;
+    line-height: 33px;
+    color: d9d9d9;
+    background: none;
+}
+#footer .relate-site form fieldset label select option:hover,#footer .relate-site form fieldset label select option:active{
+    background: #141414;
+}
+#footer .ft-info{
+    padding-top: 21px;
+    color: #7b7b7b;
+    font-size: 13px;
+    line-height: 21px;
+    border-top: 1px solid rgba(255, 255, 255, 0.22);
+}
+#footer .ft-info span{
+    display: inline-block;
+    margin-left: 30px;
+    color: #7b7b7b;
+}
+#footer .ft-info span a{
+    text-decoration: none;
+    color: #7b7b7b;
+}
+#footer .ft-info span:first-child{
+    margin-left: 0;
+}
+#footer .certifi-mark{
+    position: absolute;
+    right: 0;
+    bottom: 24px;
+}
+#footer .certifi-mark img{
+    margin-left: 10px;
+}
+#footer .certifi-mark img:first-child{
+    margin-left: 0;
+    opacity: 0.4;
+    margin-top: 3px;
+}
