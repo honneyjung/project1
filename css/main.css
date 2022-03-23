@@ -23,12 +23,13 @@ html{overflow-x: hidden;}
     position: absolute;
     left: 0;
     top: -135px;
-    color: #222;
-    border: 1px solid #222;
-    background: #000;
+    color: #fff;
+    background: #333;
     line-height: 30px;
-    width: 200px;
     text-align: center;
+    z-index: 9999;
+    padding: 10px 20px;
+    display: inline-block;
 }
 #skip a:active,#skip a:focus{
     top: 0;
@@ -72,7 +73,6 @@ html{overflow-x: hidden;}
 #k-contents{
     width: 100%;
     height: 937px;
-    padding: 131px 0 157px 0;
     background: #f5fcff;
     position: relative;
 }
@@ -350,7 +350,7 @@ html{overflow-x: hidden;}
 #service {
     background: url(../images/service/s-bg.jpg)no-repeat top center;
     width: 100%;
-    padding-top: 131px;
+    padding-top: 120px;
 }
 #service h3::before{
     content: "";
@@ -680,7 +680,6 @@ html{overflow-x: hidden;}
 /* news */
 #news{
     width: 100%;
-    padding: 131px 0 144px 0;
     background: #f6f6f6 url(../images/news/news-bg.png)no-repeat right bottom;
     overflow: hidden;
 }
@@ -915,53 +914,66 @@ html{overflow-x: hidden;}
     width: 338px;
     height: 266px;
     box-shadow: rgba(221, 221, 221, 0.57)5px 5px 20px 0px;
-    border-radius: 20px 20px 0 0;
     margin: 24px 0 0 2%;
     position: relative;
-    background: url(https://www.kwater.or.kr/thumbnail/1/RLUZb_2FqnmpUZ3wY7O3KKT0g7SNiL_2BgwffD3b2ug4uX3AkL2f2Mggf1JwSYlooDSZ.do);
+    /* overflow: hidden; */
 }
-#news .n-popup .news-control span.fr{
+#news .n-popup .img_control_slider img{
+    height: 266px;
+    border-radius: 20px 20px 0 0;
+}
+#news .n-popup .imgcontrols{
+    background: #ffffff;
+    font-size: 15px;
+    padding: 14px 25px;
+    height: 48px;
     position: absolute;
-    right: 100px;
+    width: 100%;
+    bottom: 0;
+}
+#news .n-popup .imgcontrols strong{
+    font-weight: 400;
+    line-height: 15px;    
+}
+#news .n-popup .img_controls .custom_pager{
+    position: absolute;
+    right: -50px;
     letter-spacing: 2px;
     line-height: 21px;
+    top: 50px;
 }
-#news .n-popup .news-control .bf{
-    background: url(../images/news/n-left.png)no-repeat center center/cover;
-    display: inline-block;
-    width: 8px;
-    height: 14px;
-    position: absolute;
-    right: 75px;
-    top: 18px;
-}
-#news .n-popup .news-control .pl{
-    background: url(../images/news/n-play.png)no-repeat center center/cover;
-    display: inline-block;
-    width: 8px;
-    height: 14px;
-    position: absolute;
-    right: 50px;
-    top: 18px;
-}
-#news .n-popup .news-control .nx{
-    background: url(../images/news/n-right.png)no-repeat center center/cover;
-    display: inline-block;
-    width: 8px;
-    height: 14px;
-    position: absolute;
-    right: 25px;
-    top: 18px;
-}
-#news .n-popup .news-control a span{
+#news .n-popup .imgcontrols span{
     text-indent: -999999px;
     display: block;
 }
+#news .img_controls .imgcontrols span a{
+    background-repeat: no-repeat;
+    display: block;
+    text-indent: -999999em;
+    width: 8px;
+    height: 14px;
+    display: inline-block;
+    background-size: 100%;
+    position: absolute;
+    top: 18px;
+}
+#news .img_controls .imgcontrols span.prev a{
+    background-image: url(../images/news/n-left.png);
+    right: 75px;
+}
+#news .img_controls .imgcontrols span.play a{
+    background-image: url(../images/news/n-play.png);
+    right: 50px;
+}
+#news .img_controls .imgcontrols span.next a{
+    background-image: url(../images/news/n-right.png);
+    right: 25px;
+}
+
 
 /* culture */
 #culture{
     width: 100%;
-    padding: 131px 0 159px 0;
     background: #e8f4ff url(../images/culture/culture-bg.png)no-repeat left bottom;
 }
 #culture h3::before{
@@ -1107,19 +1119,18 @@ html{overflow-x: hidden;}
 /* incruit */
 #incruit{
     width: 100%;
-    padding: 131px 0 183px;
     background: url(../images/incruit/incruit-bg.jpg)no-repeat center center;
     position: relative;
+    overflow: hidden;
 }
 #incruit .i-mid-box::before{
     content: "";
     display: block;
     position: absolute;
     width: 1px;
-    height: 958px;
+    height: 975px;
     left: 0;
     bottom:-183px;
-    margin-top: -100vh;
     background: rgba(255, 255, 255, 0.5);
 }
 #incruit .i-mid-box::after{
@@ -1127,10 +1138,9 @@ html{overflow-x: hidden;}
     display: block;
     position: absolute;
     width: 1px;
-    height: 958px;
+    height: 975px;
     right: 0;
-    bottom: -183px;
-    margin-top: -100vh;
+    bottom: -186px;
     background: rgba(255, 255, 255, 0.5);
 }
 #incruit h3::before{

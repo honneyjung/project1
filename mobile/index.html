@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOBILE</title>
+
+    <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+    <script src="../js/detectmobilebrowser.js"></script>
+
+    <script>
+        if(jQuery.browser.mobile==false){
+        location.href="../index.html"
+        }
+    </script>
+    <style>
+        body{
+            background: #edf9ff;
+            color: #222222;
+        }
+        body div{
+            width: 50%;
+            margin: auto;
+        }
+        h1,h2{ text-align: center;}
+    </style>
+</head>
+<body>
+    <div>
+        <h1>한국수자원공사</h1>
+        <h2>MOBILE PAGE</h2>
+    </div>
+</body>
+</html>

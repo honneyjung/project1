@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항 | K-water</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+    </style>
+    <link rel="stylesheet" href="css/sub.css">
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div id="gnb cf">
+                <div class="gnb-back"></div>
+                <ul class="gnb-inner cf">
+                    <li class="logo fl">
+                        <a href="index.html" target="_self">
+                            <img src="images/header/k-logo.png" alt="한국수자원공사 홈페이지로 이동합니다.">
+                        </a>
+                    </li>
+                    <ul class="fl">
+                        <li class="fl"><a href="#">열린경영</a></li>
+                        <li class="fl"><a href="#">국민소통</a></li>
+                        <li class="fl"><a href="#">새소식</a></li>
+                        <li class="fl"><a href="#">대국민서비스</a></li>
+                        <li class="fl"><a href="#">기관소개</a></li>
+                    </ul>
+                    <div class="btn fl">
+                        <a href="#">ENGLISH</a>
+                        <a href="#"></a>
+                    </div>
+                </ul>
+            </div>
+            <div id="nav-img">
+                <div class="gnb-inner">
+                    <strong>새소식</strong>
+                    <p>내일이 더욱 기대되는 기업,K-water입니다.</p>
+                </div>
+            </div>
+            <div id="nav-bottom">
+                <div class="gnb-inner cf">
+                    <div class="nav-box1 fl">
+                        <span>Home</span>
+                        <b></b>
+                        <span>새소식</span>
+                        <b></b>
+                        <span>게시판</span>
+                        <b></b>
+                        <span>공지사항</span>
+                    </div>
+                    <div class="nav-box2 fr">
+                        <a href="#" target="_blank" class="fl">
+                            <img src="images/sns_tw.png" alt="한국수자원공사 트위터 채널로 이동합니다.">
+                        </a>
+                        <a href="#" target="_blank" class="fl">
+                            <img src="images/sns_fb.png" alt="한국수자원공사 페이스북 채널로 이동합니다.">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="container">
+            <div class="con-inner cf">
+                <div class="left-nav fl">
+                    <p>새소식</p>
+                    <div class="menu">
+                        <input type="radio" id="click-menu1" name="menu" checked>
+                        <div class="title on">
+                            <label for="click-menu1">게시판</label>
+                            <b></b>
+                        </div>
+                        <div class="nav-wrap">
+                            <div class="notice">공지사항</div>
+                            <div class="event">이벤트안내</div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <input type="radio" id="click-menu2" name="menu">
+                        <div class="title">
+                            <label for="click-menu2">채용정보</label>
+                            <b></b>
+                        </div>
+                        <div class="nav-wrap">
+                            <div class="recruit">정규채용</div>
+                            <div class="recruit-option">- 인사제도</div>
+                            <div class="recruit-option">- 채용제도</div>
+                            <div class="recruit-option">- 채용공고</div>
+                            <div class="recruit-option">- 채용 자료실</div>
+                            <div class="recruit2">실무직 및 비정규직 채용공고</div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <input type="radio" id="click-menu3" name="menu">
+                        <div class="title">
+                            <label for="click-menu3">뉴스룸</label>
+                            <b></b>
+                        </div>
+                        <div class="nav-wrap">
+                            <div class="news-option">보도자료</div>
+                            <div class="news-option">뉴스레터</div>
+                            <div class="news-option">카드뉴스</div>
+                            <div class="news-option">동영상뉴스</div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <input type="radio" id="click-menu4" name="menu">
+                        <div class="title">
+                            <label for="click-menu4">홍보광장</label>
+                            <b></b>
+                        </div>
+                        <div class="nav-wrap">
+                            <div class="pr-option">사보</div>
+                            <div class="pr-option">- 사보</div>
+                            <div class="pr-option">- 독자의견코너</div>
+                            <div class="pr-option">영상자료</div>
+                            <div class="pr-option">인쇄자료</div>
+                            <div class="pr-option">홍보음악</div>
+                            <div class="pr-option">50주년기념관</div>
+                            <div class="pr-option">대학생 서포터즈</div>
+                            <div class="pr-option">탄소줄이기 캠페인</div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <input type="radio" id="click-menu5" name="menu">
+                        <div class="title">
+                            <label for="click-menu5">물사랑공모전</label>
+                            <b></b>
+                        </div>
+                        <div class="nav-wrap">
+                            <div class="contest-option">2021년 수상작</div>
+                            <div class="contest-option">2019년 수상작</div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <input type="radio" id="click-menu6" name="menu">
+                        <div class="title">
+                            <label for="click-menu6">수돗물 브런치</label>
+                            <b></b>
+                        </div>
+                    </div>
+                </div>
+                <div class="contents fl">
+                    <h2>공지사항</h2>
+                    <div class="con-top-align cf">
+                        <div class="align-box1 fl">
+                            <div>총 게시물<span>305</span>건</div>
+                        </div>
+                        <div class="align-box2 fr">
+                            <span class="fl">정렬</span>
+                            <div class="fl">
+                                등록순
+                                <img src="images/bul_arrow_on.gif" alt="">
+                            </div>
+                            <div class="fl">
+                                조회순
+                                <img src="images/bul_arrow_off.gif" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="con-top con-group cf">
+                        <div class="fl num">번호</div>
+                        <div class="fl col2">구분</div>
+                        <div class="fl">부서</div>
+                        <div class="fl col4">제목</div>
+                        <div class="fl">첨부파일</div>
+                        <div class="fl">작성자</div>
+                        <div class="fl">작성일</div>
+                        <div class="fl">조회수</div>
+                    </div>
+                    <div class="con-group cf">
+                        <input type="radio" id="click305" name="board">
+                        <div class="fl num">305</div>
+                        <div class="fl col2">협력업체지정</div>
+                        <div class="fl">경북지역협력단</div>
+                        <div class="fl col4 left">
+                            <label for="click305">[청도군]지방상수도 현대화사업 긴급복구 협력...
+                                <span>
+                                    <img src="images/ico_new.gif" alt="새로운 글">
+                                </span>
+                            </label>
+                        </div>
+                        <div class="fl"><img src="images/file.gif" alt="첨부파일 이미지 아이콘"></div>
+                        <div class="fl">박성민</div>
+                        <div class="fl">2022-02-18</div>
+                        <div class="fl">365</div>
+                        <div class="con-wrap cf">
+                            <strong class="con-subject fl">[청도군]지방상수도 현대화사업 긴급복구 협력업체 지정공고</strong>
+                            <div class="con-subject2">
+                                <span>협력업체 지정</span>
+                                <strong>박성민</strong>
+                                <span>2022-02-18</span>
+                                <strong>조회수</strong>
+                                <span>309</span>
+                            </div>
+                            <a href="#" class="fr">
+                                첨부파일(<span>1</span>)
+                                <img src="images/file_down.gif" alt="첨부 파일 보기">
+                            </a>
+                            <div class="con-info fl">
+                                1. 협력업체 지정목적: 청도군 지방상수도 현대화사업의 사업대상지 내 수도시설물의 누수사고 및 수도시설물손괴에 의한 안전사고를예방하기 위해 시행되는 긴급복구공사 시행을 위한 복구업체 지정
+
+                                2. 협력업체 신청자격요건
+                                 가. 등록신청일 현재 청도군에 주된 사무소가 소재한 업체
+                                 나. 상하수도 설비공사업, 토목공사업, 토목건축공사업 중 1개 이상 소지한 업체
+                                 다. K-water 청도현대화사업소에서 규정한 기본장비와 인력을 보유한 업체
+                                
+                                3. 등록절차
+                                 가. 등록신청서 배부 및 접수기간 : 2022.02.18.(금) 9:00 ~ 2022.02.28.(월) 18:00 (10일)
+                                 나. 협력업체 확정발표 : 2022.03.07. (개별통보)
+                                 다. 등록신청서 배부 및 접수처 :
+                                    - (배부처) K-water 홈페이지(새소식-게시판-공지사항) 
+                                    - (접수처) K-water 청도현대화사업소(청도군 청도읍 청화로 154, 5층)
+                                
+                                4. 협력업체 선정기준 및 협력업체수: 당 공사 협력업체 지정 평가기준에 의거 심사평가 후, 70점 이상인 대상업체 중 가장 높은 점수를 획득한 고득점 순으로 최대 2개 업체 선정
+                                
+                                5. 협력업체 지정유효기간 :지정일로부터 3년
+                                
+                                6. 협력업체 운영
+                                 가. 청도군 현대화사업소 업무처리방안에 의한 운영
+                                 나. 기타 세부 내용은 K-water 청도현대화사업소 직접방문 및 전화문의 요망
+                                    - 주소 : 경상북도 청도군 청도읍 청화로154, 5층 청도현대화사업소
+                                    - 전화 : 전화 054-380-3581 (담당자 : 김용진)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="con-group cf">
+                        <input type="radio" id="click304" name="board">
+                        <div class="fl num">304</div>
+                        <div class="fl col2">공고</div>
+                        <div class="fl">영·섬사업계획처</div>
+                        <div class="fl col4 left">
+                            <label for="click304">완도군 보길도 지하수저류지 설치공사 안전점검...
+                                <span>
+                                    <img src="images/ico_new.gif" alt="새로운 글">
+                                </span>
+                            </label>
+                        </div>
+                        <div class="fl"></div>
+                        <div class="fl">이대형</div>
+                        <div class="fl">2022-02-18</div>
+                        <div class="fl">425</div>
+                        <div class="con-wrap cf">
+                            <strong class="con-subject fl">[청도군]지방상수도 현대화사업 긴급복구 협력업체 지정공고</strong>
+                            <div class="con-subject2">
+                                <span>협력업체 지정</span>
+                                <strong>박성민</strong>
+                                <span>2022-02-18</span>
+                                <strong>조회수</strong>
+                                <span>309</span>
+                            </div>
+                            <a href="#" class="fr">
+                                첨부파일(<span>1</span>)
+                                <img src="images/file_down.gif" alt="첨부 파일 보기">
+                            </a>
+                            <div class="con-info fl">
+                                1. 협력업체 지정목적: 청도군 지방상수도 현대화사업의 사업대상지 내 수도시설물의 누수사고 및 수도시설물손괴에 의한 안전사고를예방하기 위해 시행되는 긴급복구공사 시행을 위한 복구업체 지정
+
+                                2. 협력업체 신청자격요건
+                                 가. 등록신청일 현재 청도군에 주된 사무소가 소재한 업체
+                                 나. 상하수도 설비공사업, 토목공사업, 토목건축공사업 중 1개 이상 소지한 업체
+                                 다. K-water 청도현대화사업소에서 규정한 기본장비와 인력을 보유한 업체
+                                
+                                3. 등록절차
+                                 가. 등록신청서 배부 및 접수기간 : 2022.02.18.(금) 9:00 ~ 2022.02.28.(월) 18:00 (10일)
+                                 나. 협력업체 확정발표 : 2022.03.07. (개별통보)
+                                 다. 등록신청서 배부 및 접수처 :
+                                    - (배부처) K-water 홈페이지(새소식-게시판-공지사항) 
+                                    - (접수처) K-water 청도현대화사업소(청도군 청도읍 청화로 154, 5층)
+                                
+                                4. 협력업체 선정기준 및 협력업체수: 당 공사 협력업체 지정 평가기준에 의거 심사평가 후, 70점 이상인 대상업체 중 가장 높은 점수를 획득한 고득점 순으로 최대 2개 업체 선정
+                                
+                                5. 협력업체 지정유효기간 :지정일로부터 3년
+                                
+                                6. 협력업체 운영
+                                 가. 청도군 현대화사업소 업무처리방안에 의한 운영
+                                 나. 기타 세부 내용은 K-water 청도현대화사업소 직접방문 및 전화문의 요망
+                                    - 주소 : 경상북도 청도군 청도읍 청화로154, 5층 청도현대화사업소
+                                    - 전화 : 전화 054-380-3581 (담당자 : 김용진)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="con-group cf">
+                        <input type="radio" id="click303" name="board">
+                        <div class="fl num">303</div>
+                        <div class="fl col2">보상</div>
+                        <div class="fl">창원권지사</div>
+                        <div class="fl col4 left">
+                            <label for="click303">창원공업용수도 관로시설 개량사업(2차) 주소.거소 불명 토지 공시송달 게시
+                                <span>
+                                    <img src="images/ico_new.gif" alt="새로운 글">
+                                </span>
+                            </label>
+                        </div>
+                        <div class="fl"><img src="images/file.gif" alt="첨부파일 이미지 아이콘"></div>
+                        <div class="fl">박성민</div>
+                        <div class="fl">2022-02-17</div>
+                        <div class="fl">589</div>
+                        <div class="con-wrap cf">
+                            <strong class="con-subject fl">[청도군]지방상수도 현대화사업 긴급복구 협력업체 지정공고</strong>
+                            <div class="con-subject2">
+                                <span>협력업체 지정</span>
+                                <strong>박성민</strong>
+                                <span>2022-02-18</span>
+                                <strong>조회수</strong>
+                                <span>309</span>
+                            </div>
+                            <a href="#" class="fr">
+                                첨부파일(<span>1</span>)
+                                <img src="images/file_down.gif" alt="첨부 파일 보기">
+                            </a>
+                            <div class="con-info fl">
+                                1. 협력업체 지정목적: 청도군 지방상수도 현대화사업의 사업대상지 내 수도시설물의 누수사고 및 수도시설물손괴에 의한 안전사고를예방하기 위해 시행되는 긴급복구공사 시행을 위한 복구업체 지정
+
+                                2. 협력업체 신청자격요건
+                                 가. 등록신청일 현재 청도군에 주된 사무소가 소재한 업체
+                                 나. 상하수도 설비공사업, 토목공사업, 토목건축공사업 중 1개 이상 소지한 업체
+                                 다. K-water 청도현대화사업소에서 규정한 기본장비와 인력을 보유한 업체
+                                
+                                3. 등록절차
+                                 가. 등록신청서 배부 및 접수기간 : 2022.02.18.(금) 9:00 ~ 2022.02.28.(월) 18:00 (10일)
+                                 나. 협력업체 확정발표 : 2022.03.07. (개별통보)
+                                 다. 등록신청서 배부 및 접수처 :
+                                    - (배부처) K-water 홈페이지(새소식-게시판-공지사항) 
+                                    - (접수처) K-water 청도현대화사업소(청도군 청도읍 청화로 154, 5층)
+                                
+                                4. 협력업체 선정기준 및 협력업체수: 당 공사 협력업체 지정 평가기준에 의거 심사평가 후, 70점 이상인 대상업체 중 가장 높은 점수를 획득한 고득점 순으로 최대 2개 업체 선정
+                                
+                                5. 협력업체 지정유효기간 :지정일로부터 3년
+                                
+                                6. 협력업체 운영
+                                 가. 청도군 현대화사업소 업무처리방안에 의한 운영
+                                 나. 기타 세부 내용은 K-water 청도현대화사업소 직접방문 및 전화문의 요망
+                                    - 주소 : 경상북도 청도군 청도읍 청화로154, 5층 청도현대화사업소
+                                    - 전화 : 전화 054-380-3581 (담당자 : 김용진)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="con-group cf">
+                        <input type="radio" id="click302" name="board">
+                        <div class="fl num">302</div>
+                        <div class="fl col2">공고</div>
+                        <div class="fl">울산권지사</div>
+                        <div class="fl col4 left">
+                            <label for="click302">울산공업용수도 노후관 개량사업(3차) 및 추가...
+                            </label>
+                        </div>
+                        <div class="fl"><img src="images/file.gif" alt="첨부파일 이미지 아이콘"></div>
+                        <div class="fl">안혜주</div>
+                        <div class="fl">2022-02-15</div>
+                        <div class="fl">622</div>
+                        <div class="con-wrap cf">
+                            <strong class="con-subject fl">[청도군]지방상수도 현대화사업 긴급복구 협력업체 지정공고</strong>
+                            <div class="con-subject2">
+                                <span>협력업체 지정</span>
+                                <strong>박성민</strong>
+                                <span>2022-02-18</span>
+                                <strong>조회수</strong>
+                                <span>309</span>
+                            </div>
+                            <a href="#" class="fr">
+                                첨부파일(<span>1</span>)
+                                <img src="images/file_down.gif" alt="첨부 파일 보기">
+                            </a>
+                            <div class="con-info fl">
+                                1. 협력업체 지정목적: 청도군 지방상수도 현대화사업의 사업대상지 내 수도시설물의 누수사고 및 수도시설물손괴에 의한 안전사고를예방하기 위해 시행되는 긴급복구공사 시행을 위한 복구업체 지정
+
+                                2. 협력업체 신청자격요건
+                                 가. 등록신청일 현재 청도군에 주된 사무소가 소재한 업체
+                                 나. 상하수도 설비공사업, 토목공사업, 토목건축공사업 중 1개 이상 소지한 업체
+                                 다. K-water 청도현대화사업소에서 규정한 기본장비와 인력을 보유한 업체
+                                
+                                3. 등록절차
+                                 가. 등록신청서 배부 및 접수기간 : 2022.02.18.(금) 9:00 ~ 2022.02.28.(월) 18:00 (10일)
+                                 나. 협력업체 확정발표 : 2022.03.07. (개별통보)
+                                 다. 등록신청서 배부 및 접수처 :
+                                    - (배부처) K-water 홈페이지(새소식-게시판-공지사항) 
+                                    - (접수처) K-water 청도현대화사업소(청도군 청도읍 청화로 154, 5층)
+                                
+                                4. 협력업체 선정기준 및 협력업체수: 당 공사 협력업체 지정 평가기준에 의거 심사평가 후, 70점 이상인 대상업체 중 가장 높은 점수를 획득한 고득점 순으로 최대 2개 업체 선정
+                                
+                                5. 협력업체 지정유효기간 :지정일로부터 3년
+                                
+                                6. 협력업체 운영
+                                 가. 청도군 현대화사업소 업무처리방안에 의한 운영
+                                 나. 기타 세부 내용은 K-water 청도현대화사업소 직접방문 및 전화문의 요망
+                                    - 주소 : 경상북도 청도군 청도읍 청화로154, 5층 청도현대화사업소
+                                    - 전화 : 전화 054-380-3581 (담당자 : 김용진)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="con-group cf">
+                        <input type="radio" id="click301" name="board">
+                        <div class="fl num">301</div>
+                        <div class="fl col2">공고</div>
+                        <div class="fl">여수권지사</div>
+                        <div class="fl col4 left">
+                            <label for="click301">광양(|)공업용수도 노후관 개량사업 시설공사(...
+                            </label>
+                        </div>
+                        <div class="fl"></div>
+                        <div class="fl">조기현</div>
+                        <div class="fl">2022-02-15</div>
+                        <div class="fl">595</div>
+                        <div class="con-wrap cf">
+                            <strong class="con-subject fl">[청도군]지방상수도 현대화사업 긴급복구 협력업체 지정공고</strong>
+                            <div class="con-subject2">
+                                <span>협력업체 지정</span>
+                                <strong>박성민</strong>
+                                <span>2022-02-18</span>
+                                <strong>조회수</strong>
+                                <span>309</span>
+                            </div>
+                            <a href="#" class="fr">
+                                첨부파일(<span>1</span>)
+                                <img src="images/file_down.gif" alt="첨부 파일 보기">
+                            </a>
+                            <div class="con-info fl">
+                                1. 협력업체 지정목적: 청도군 지방상수도 현대화사업의 사업대상지 내 수도시설물의 누수사고 및 수도시설물손괴에 의한 안전사고를예방하기 위해 시행되는 긴급복구공사 시행을 위한 복구업체 지정
+
+                                2. 협력업체 신청자격요건
+                                 가. 등록신청일 현재 청도군에 주된 사무소가 소재한 업체
+                                 나. 상하수도 설비공사업, 토목공사업, 토목건축공사업 중 1개 이상 소지한 업체
+                                 다. K-water 청도현대화사업소에서 규정한 기본장비와 인력을 보유한 업체
+                                
+                                3. 등록절차
+                                 가. 등록신청서 배부 및 접수기간 : 2022.02.18.(금) 9:00 ~ 2022.02.28.(월) 18:00 (10일)
+                                 나. 협력업체 확정발표 : 2022.03.07. (개별통보)
+                                 다. 등록신청서 배부 및 접수처 :
+                                    - (배부처) K-water 홈페이지(새소식-게시판-공지사항) 
+                                    - (접수처) K-water 청도현대화사업소(청도군 청도읍 청화로 154, 5층)
+                                
+                                4. 협력업체 선정기준 및 협력업체수: 당 공사 협력업체 지정 평가기준에 의거 심사평가 후, 70점 이상인 대상업체 중 가장 높은 점수를 획득한 고득점 순으로 최대 2개 업체 선정
+                                
+                                5. 협력업체 지정유효기간 :지정일로부터 3년
+                                
+                                6. 협력업체 운영
+                                 가. 청도군 현대화사업소 업무처리방안에 의한 운영
+                                 나. 기타 세부 내용은 K-water 청도현대화사업소 직접방문 및 전화문의 요망
+                                    - 주소 : 경상북도 청도군 청도읍 청화로154, 5층 청도현대화사업소
+                                    - 전화 : 전화 054-380-3581 (담당자 : 김용진)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="con-group cf">
+                        <input type="radio" id="click300" name="board">
+                        <div class="fl num">300</div>
+                        <div class="fl col2">공고</div>
+                        <div class="fl">여수권지사</div>
+                        <div class="fl col4 left">
+                            <label for="click300">광양(|)공업용수도 노후관 개량사업 시설공사(...
+                            </label>
+                        </div>
+                        <div class="fl"><img src="images/file.gif" alt="첨부파일 이미지 아이콘"></div>
+                        <div class="fl">김민주</div>
+                        <div class="fl">2022-02-14</div>
+                        <div class="fl">530</div>
+                        <div class="con-wrap cf">
+                            <strong class="con-subject fl">[청도군]지방상수도 현대화사업 긴급복구 협력업체 지정공고</strong>
+                            <div class="con-subject2">
+                                <span>협력업체 지정</span>
+                                <strong>박성민</strong>
+                                <span>2022-02-18</span>
+                                <strong>조회수</strong>
+                                <span>309</span>
+                            </div>
+                            <a href="#" class="fr">
+                                첨부파일(<span>1</span>)
+                                <img src="images/file_down.gif" alt="첨부 파일 보기">
+                            </a>
+                            <div class="con-info fl">
+                                1. 협력업체 지정목적: 청도군 지방상수도 현대화사업의 사업대상지 내 수도시설물의 누수사고 및 수도시설물손괴에 의한 안전사고를예방하기 위해 시행되는 긴급복구공사 시행을 위한 복구업체 지정
+
+                                2. 협력업체 신청자격요건
+                                 가. 등록신청일 현재 청도군에 주된 사무소가 소재한 업체
+                                 나. 상하수도 설비공사업, 토목공사업, 토목건축공사업 중 1개 이상 소지한 업체
+                                 다. K-water 청도현대화사업소에서 규정한 기본장비와 인력을 보유한 업체
+                                
+                                3. 등록절차
+                                 가. 등록신청서 배부 및 접수기간 : 2022.02.18.(금) 9:00 ~ 2022.02.28.(월) 18:00 (10일)
+                                 나. 협력업체 확정발표 : 2022.03.07. (개별통보)
+                                 다. 등록신청서 배부 및 접수처 :
+                                    - (배부처) K-water 홈페이지(새소식-게시판-공지사항) 
+                                    - (접수처) K-water 청도현대화사업소(청도군 청도읍 청화로 154, 5층)
+                                
+                                4. 협력업체 선정기준 및 협력업체수: 당 공사 협력업체 지정 평가기준에 의거 심사평가 후, 70점 이상인 대상업체 중 가장 높은 점수를 획득한 고득점 순으로 최대 2개 업체 선정
+                                
+                                5. 협력업체 지정유효기간 :지정일로부터 3년
+                                
+                                6. 협력업체 운영
+                                 가. 청도군 현대화사업소 업무처리방안에 의한 운영
+                                 나. 기타 세부 내용은 K-water 청도현대화사업소 직접방문 및 전화문의 요망
+                                    - 주소 : 경상북도 청도군 청도읍 청화로154, 5층 청도현대화사업소
+                                    - 전화 : 전화 054-380-3581 (담당자 : 김용진)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="con-group cf">
+                        <input type="radio" id="click299" name="board">
+                        <div class="fl num">299</div>
+                        <div class="fl col2">협력업체지정</div>
+                        <div class="fl">부산울산경남지역협력본부</div>
+                        <div class="fl col4 left">
+                            <label for="click299">[남해군] 현대화사업 긴급복구 협력업체 모집...
+                            </label>
+                        </div>
+                        <div class="fl"><img src="images/file.gif" alt="첨부파일 이미지 아이콘"></div>
+                        <div class="fl">박영민</div>
+                        <div class="fl">2022-02-14</div>
+                        <div class="fl">228</div>
+                        <div class="con-wrap cf">
+                            <strong class="con-subject fl">[청도군]지방상수도 현대화사업 긴급복구 협력업체 지정공고</strong>
+                            <div class="con-subject2">
+                                <span>협력업체 지정</span>
+                                <strong>박성민</strong>
+                                <span>2022-02-18</span>
+                                <strong>조회수</strong>
+                                <span>309</span>
+                            </div>
+                            <a href="#" class="fr">
+                                첨부파일(<span>1</span>)
+                                <img src="images/file_down.gif" alt="첨부 파일 보기">
+                            </a>
+                            <div class="con-info fl">
+                                1. 협력업체 지정목적: 청도군 지방상수도 현대화사업의 사업대상지 내 수도시설물의 누수사고 및 수도시설물손괴에 의한 안전사고를예방하기 위해 시행되는 긴급복구공사 시행을 위한 복구업체 지정
+
+                                2. 협력업체 신청자격요건
+                                 가. 등록신청일 현재 청도군에 주된 사무소가 소재한 업체
+                                 나. 상하수도 설비공사업, 토목공사업, 토목건축공사업 중 1개 이상 소지한 업체
+                                 다. K-water 청도현대화사업소에서 규정한 기본장비와 인력을 보유한 업체
+                                
+                                3. 등록절차
+                                 가. 등록신청서 배부 및 접수기간 : 2022.02.18.(금) 9:00 ~ 2022.02.28.(월) 18:00 (10일)
+                                 나. 협력업체 확정발표 : 2022.03.07. (개별통보)
+                                 다. 등록신청서 배부 및 접수처 :
+                                    - (배부처) K-water 홈페이지(새소식-게시판-공지사항) 
+                                    - (접수처) K-water 청도현대화사업소(청도군 청도읍 청화로 154, 5층)
+                                
+                                4. 협력업체 선정기준 및 협력업체수: 당 공사 협력업체 지정 평가기준에 의거 심사평가 후, 70점 이상인 대상업체 중 가장 높은 점수를 획득한 고득점 순으로 최대 2개 업체 선정
+                                
+                                5. 협력업체 지정유효기간 :지정일로부터 3년
+                                
+                                6. 협력업체 운영
+                                 가. 청도군 현대화사업소 업무처리방안에 의한 운영
+                                 나. 기타 세부 내용은 K-water 청도현대화사업소 직접방문 및 전화문의 요망
+                                    - 주소 : 경상북도 청도군 청도읍 청화로154, 5층 청도현대화사업소
+                                    - 전화 : 전화 054-380-3581 (담당자 : 김용진)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="con-group cf">
+                        <input type="radio" id="click298" name="board">
+                        <div class="fl num">298</div>
+                        <div class="fl col2">수질검사</div>
+                        <div class="fl">금산권지사</div>
+                        <div class="fl col4 left">
+                            <label for="click298">금산권지사 22년 1월 정수, 수도꼭지 수질검...
+                            </label>
+                        </div>
+                        <div class="fl"><img src="images/file.gif" alt="첨부파일 이미지 아이콘"></div>
+                        <div class="fl">오윤서</div>
+                        <div class="fl">2022-02-14</div>
+                        <div class="fl">203</div>
+                        <div class="con-wrap cf">
+                            <strong class="con-subject fl">[청도군]지방상수도 현대화사업 긴급복구 협력업체 지정공고</strong>
+                            <div class="con-subject2">
+                                <span>협력업체 지정</span>
+                                <strong>박성민</strong>
+                                <span>2022-02-18</span>
+                                <strong>조회수</strong>
+                                <span>309</span>
+                            </div>
+                            <a href="#" class="fr">
+                                첨부파일(<span>1</span>)
+                                <img src="images/file_down.gif" alt="첨부 파일 보기">
+                            </a>
+                            <div class="con-info fl">
+                                1. 협력업체 지정목적: 청도군 지방상수도 현대화사업의 사업대상지 내 수도시설물의 누수사고 및 수도시설물손괴에 의한 안전사고를예방하기 위해 시행되는 긴급복구공사 시행을 위한 복구업체 지정
+
+                                2. 협력업체 신청자격요건
+                                 가. 등록신청일 현재 청도군에 주된 사무소가 소재한 업체
+                                 나. 상하수도 설비공사업, 토목공사업, 토목건축공사업 중 1개 이상 소지한 업체
+                                 다. K-water 청도현대화사업소에서 규정한 기본장비와 인력을 보유한 업체
+                                
+                                3. 등록절차
+                                 가. 등록신청서 배부 및 접수기간 : 2022.02.18.(금) 9:00 ~ 2022.02.28.(월) 18:00 (10일)
+                                 나. 협력업체 확정발표 : 2022.03.07. (개별통보)
+                                 다. 등록신청서 배부 및 접수처 :
+                                    - (배부처) K-water 홈페이지(새소식-게시판-공지사항) 
+                                    - (접수처) K-water 청도현대화사업소(청도군 청도읍 청화로 154, 5층)
+                                
+                                4. 협력업체 선정기준 및 협력업체수: 당 공사 협력업체 지정 평가기준에 의거 심사평가 후, 70점 이상인 대상업체 중 가장 높은 점수를 획득한 고득점 순으로 최대 2개 업체 선정
+                                
+                                5. 협력업체 지정유효기간 :지정일로부터 3년
+                                
+                                6. 협력업체 운영
+                                 가. 청도군 현대화사업소 업무처리방안에 의한 운영
+                                 나. 기타 세부 내용은 K-water 청도현대화사업소 직접방문 및 전화문의 요망
+                                    - 주소 : 경상북도 청도군 청도읍 청화로154, 5층 청도현대화사업소
+                                    - 전화 : 전화 054-380-3581 (담당자 : 김용진)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="con-group cf">
+                        <input type="radio" id="click297" name="board">
+                        <div class="fl num">297</div>
+                        <div class="fl col2">협력업체지정</div>
+                        <div class="fl">전남지역협력단</div>
+                        <div class="fl col4 left">
+                            <label for="click297">[신안군] 현대화사업 긴급복구 협력업체 모집...
+                            </label>
+                        </div>
+                        <div class="fl"><img src="images/file.gif" alt="첨부파일 이미지 아이콘"></div>
+                        <div class="fl">이대규</div>
+                        <div class="fl">2022-02-14</div>
+                        <div class="fl">137</div>
+                        <div class="con-wrap cf">
+                            <strong class="con-subject fl">[청도군]지방상수도 현대화사업 긴급복구 협력업체 지정공고</strong>
+                            <div class="con-subject2">
+                                <span>협력업체 지정</span>
+                                <strong>박성민</strong>
+                                <span>2022-02-18</span>
+                                <strong>조회수</strong>
+                                <span>309</span>
+                            </div>
+                            <a href="#" class="fr">
+                                첨부파일(<span>1</span>)
+                                <img src="images/file_down.gif" alt="첨부 파일 보기">
+                            </a>
+                            <div class="con-info fl">
+                                1. 협력업체 지정목적: 청도군 지방상수도 현대화사업의 사업대상지 내 수도시설물의 누수사고 및 수도시설물손괴에 의한 안전사고를예방하기 위해 시행되는 긴급복구공사 시행을 위한 복구업체 지정
+
+                                2. 협력업체 신청자격요건
+                                 가. 등록신청일 현재 청도군에 주된 사무소가 소재한 업체
+                                 나. 상하수도 설비공사업, 토목공사업, 토목건축공사업 중 1개 이상 소지한 업체
+                                 다. K-water 청도현대화사업소에서 규정한 기본장비와 인력을 보유한 업체
+                                
+                                3. 등록절차
+                                 가. 등록신청서 배부 및 접수기간 : 2022.02.18.(금) 9:00 ~ 2022.02.28.(월) 18:00 (10일)
+                                 나. 협력업체 확정발표 : 2022.03.07. (개별통보)
+                                 다. 등록신청서 배부 및 접수처 :
+                                    - (배부처) K-water 홈페이지(새소식-게시판-공지사항) 
+                                    - (접수처) K-water 청도현대화사업소(청도군 청도읍 청화로 154, 5층)
+                                
+                                4. 협력업체 선정기준 및 협력업체수: 당 공사 협력업체 지정 평가기준에 의거 심사평가 후, 70점 이상인 대상업체 중 가장 높은 점수를 획득한 고득점 순으로 최대 2개 업체 선정
+                                
+                                5. 협력업체 지정유효기간 :지정일로부터 3년
+                                
+                                6. 협력업체 운영
+                                 가. 청도군 현대화사업소 업무처리방안에 의한 운영
+                                 나. 기타 세부 내용은 K-water 청도현대화사업소 직접방문 및 전화문의 요망
+                                    - 주소 : 경상북도 청도군 청도읍 청화로154, 5층 청도현대화사업소
+                                    - 전화 : 전화 054-380-3581 (담당자 : 김용진)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="con-bottom con-group cf">
+                        <input type="radio" id="click296" name="board">
+                        <div class="fl num">296</div>
+                        <div class="fl col2">보상</div>
+                        <div class="fl">여수권지사</div>
+                        <div class="fl col4 left">
+                            <label for="click296">광양( ∣ 단계)공업용수도 노후관 개량사업 보상계...
+                            </label>
+                        </div>
+                        <div class="fl"><img src="images/file.gif" alt="첨부파일 이미지 아이콘"></div>
+                        <div class="fl">이지은</div>
+                        <div class="fl">2022-02-10</div>
+                        <div class="fl">829</div>
+                        <div class="con-wrap cf">
+                            <strong class="con-subject fl">[청도군]지방상수도 현대화사업 긴급복구 협력업체 지정공고</strong>
+                            <div class="con-subject2">
+                                <span>협력업체 지정</span>
+                                <strong>박성민</strong>
+                                <span>2022-02-18</span>
+                                <strong>조회수</strong>
+                                <span>309</span>
+                            </div>
+                            <a href="#" class="fr">
+                                첨부파일(<span>1</span>)
+                                <img src="images/file_down.gif" alt="첨부 파일 보기">
+                            </a>
+                            <div class="con-info fl">
+                                1. 협력업체 지정목적: 청도군 지방상수도 현대화사업의 사업대상지 내 수도시설물의 누수사고 및 수도시설물손괴에 의한 안전사고를예방하기 위해 시행되는 긴급복구공사 시행을 위한 복구업체 지정
+
+                                2. 협력업체 신청자격요건
+                                 가. 등록신청일 현재 청도군에 주된 사무소가 소재한 업체
+                                 나. 상하수도 설비공사업, 토목공사업, 토목건축공사업 중 1개 이상 소지한 업체
+                                 다. K-water 청도현대화사업소에서 규정한 기본장비와 인력을 보유한 업체
+                                
+                                3. 등록절차
+                                 가. 등록신청서 배부 및 접수기간 : 2022.02.18.(금) 9:00 ~ 2022.02.28.(월) 18:00 (10일)
+                                 나. 협력업체 확정발표 : 2022.03.07. (개별통보)
+                                 다. 등록신청서 배부 및 접수처 :
+                                    - (배부처) K-water 홈페이지(새소식-게시판-공지사항) 
+                                    - (접수처) K-water 청도현대화사업소(청도군 청도읍 청화로 154, 5층)
+                                
+                                4. 협력업체 선정기준 및 협력업체수: 당 공사 협력업체 지정 평가기준에 의거 심사평가 후, 70점 이상인 대상업체 중 가장 높은 점수를 획득한 고득점 순으로 최대 2개 업체 선정
+                                
+                                5. 협력업체 지정유효기간 :지정일로부터 3년
+                                
+                                6. 협력업체 운영
+                                 가. 청도군 현대화사업소 업무처리방안에 의한 운영
+                                 나. 기타 세부 내용은 K-water 청도현대화사업소 직접방문 및 전화문의 요망
+                                    - 주소 : 경상북도 청도군 청도읍 청화로154, 5층 청도현대화사업소
+                                    - 전화 : 전화 054-380-3581 (담당자 : 김용진)
+                            </div>
+                        </div>
+                    </div>
+                    <div id="pager-wrap" class="cf">
+                        <div class="prev">이전</div>
+                        <div class="fl">1</div>
+                        <div class="fl">2</div>
+                        <div class="fl">3</div>
+                        <div class="fl">4</div>
+                        <div class="fl">5</div>
+                        <div class="fl">6</div>
+                        <div class="fl">7</div>
+                        <div class="fl">8</div>
+                        <div class="fl">9</div>
+                        <div class="fl">10</div>
+                        <div class="next">다음</div>
+                    </div>
+                    <div id="search-wrap">
+                        <form action="#">
+                            <fieldset class="cf">
+                                <label class="fl">
+                                    <select name="search" class="fl">
+                                        <option value="전체">전체</option>
+                                        <option value="제목">제목</option>
+                                        <option value="구분">구분</option>
+                                        <option value="부서">부서</option>
+                                        <option value="작성자">작성자</option>
+                                        <option value="내용">내용</option>
+                                    </select>
+                                </label>
+                                <div class="text-box fl">
+                                    <input type="text" name="text" class="fl">
+                                    <input type="image" src="images/search_btn.gif" alt="검색" class="fr">
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer></footer>
+    </div>
+</body>
+</html>
