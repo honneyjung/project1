@@ -95,30 +95,80 @@
 #footer .ft-sns li.kt a{
     background: url(../images/footer/ft-kt.png)no-repeat center center;
 }
-#footer .relate-site{
+#footer .relate_site{
     position: absolute;
     right: 0;
     top: 27px;
+    z-index: 20;
     width: 237px;
 }
-#footer .relate-site form fieldset label select{
-    background: none;
-    border: none;
-    max-height: 210px;
-}
-#footer .relate-site form fieldset label select option{
-    font-size: 14px;
+#footer .relate_site.faily_site{ right: 250px;}
+#footer .relate_site a{
+    display: block;
+    width: 237px;
+    text-decoration: none;
     padding: 0 7%;
+    font-size: 14px;
     height: 35px;
     position: relative;
     border: 1px solid #7b7b7b;
     line-height: 33px;
-    color: d9d9d9;
-    background: none;
+    color: rgba(164, 164, 164, 0.6);
 }
-#footer .relate-site form fieldset label select option:hover,#footer .relate-site form fieldset label select option:active{
-    background: #141414;
+#footer .relate_site a::after{
+    content: "";
+    display: block;
+    position: absolute;
+    right: 7%;
+    top: 50%;
+    margin-top: -5px;
+    width: 16.2px;
+    height: 9.9px;
+    background: url(../images/footer/ft-relate-site-arrow.png)no-repeat center 50%/contain;
+    transform: rotate(-180deg);
+    transition: all 0.3s ease;
 }
+#footer .relate_site a.on::after{
+    transform: rotate(0);
+}
+#footer .relate_site ul{
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid #6e6e6e;
+    border-bottom: 0;
+    position: absolute;
+    left: 0;
+    bottom: 35px;
+    z-index: 200;
+    background: #6e6e6e;
+    width: 237px;
+    display: none;
+    max-height: 210px;
+    overflow:auto;
+}
+#footer .relate_site ul li{
+    display: block;
+    margin: 0;
+    border-bottom: 1px solid #d9d9d9;
+    float: none;
+    width: auto;
+}
+#footer .relate_site ul li a{
+    width: auto;
+    border: 0;
+    padding: 8px 7%;
+    height: auto;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 300;
+}
+#footer .relate_site a .hidden{
+    text-indent: -999999px;
+    display: block;
+}
+#footer .relate_site ul li a::after{ display: none;}
+#footer .relate_site ul li a:hover,#footer .relate_site ul li a:active{ background: #141414;}
 #footer .ft-info{
     padding-top: 21px;
     color: #7b7b7b;

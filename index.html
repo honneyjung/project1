@@ -41,15 +41,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <!-- js -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
 	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
  	<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
-
-    <script type="text/javascript"  src="js/jq.js"></script>
+    <script src="js/detectmobilebrowser.js"></script>
+    <script src="js/jq.js"></script>
 
     <script>
     if(jQuery.browser.mobile==true){
-            location.href="./mobile/index.html"
+            location.href="mobile/index.html"
         }
 	</script>
 </head>
@@ -326,7 +327,6 @@
                                 <span class="stop fr"></span>
                                 <span class="next fr"></span>
                             </div>
-                            <div class="custom_pager"></div>
                         </div>
                     </div>
                 </div> <!-- .inner -->
@@ -446,40 +446,35 @@
                         <li class="fl tw"><a href="#">트위터</a></li>
                         <li class="fl kt"><a href="#">카카오톡 채널</a></li>
                     </ul>
-                    <div class="relate-site">
-                        <form action="#">
-                            <fieldset>
-                                <label>
-                                    <select>
-                                        <option>관련사이트</option>
-                                        <option>My Water (물정보포털)</option>
-                                        <option>K-water 단비톡톡</option>
-                                        <option>K-water연구원</option>
-                                        <option>K-water 인재개발원</option>
-                                        <option>지방상수도포털(Water-pos)</option>
-                                        <option>K-water 공공데이터개방포털</option>
-                                        <option>K-water 물산업플랫폼</option>
-                                        <option>K-water 온라인청약시스템</option>
-                                        <option>K-water 전자조달시스템</option>
-                                        <option>국가가뭄정보포털</option>
-                                        <option>건설사업관리시스템</option>
-                                        <option>경인아라뱃길</option>
-                                        <option>국가지하수정보센터(GIMS)</option>
-                                        <option>댐사전검토협의회</option>
-                                        <option>부산에코델타시티</option>
-                                        <option>송산그린시티</option>
-                                        <option>수우회</option>
-                                        <option>부산 에코델타 스마트시티</option>
-                                        <option>시화지구지속가능발전협의회</option>
-                                        <option>시화호조력발전소</option>
-                                        <option>우리강이용도우미포털</option>
-                                        <option>워터웨이플러스(WW+)</option>
-                                        <option>환경 빅데이터 플랫폼</option>
-                                        <option>기술기준통합정보시스템</option>
-                                    </select>
-                                </label>
-                            </fieldset>
-                        </form>
+                    <div class="relate_site">
+                        <a href="#">관련사이트
+                        </a>
+                        <ul style="display: none;">
+                            <li><a href="#">My Water (물정보포털)</a></li>
+                            <li><a href="#">K-water 단비톡톡</a></li>
+                            <li><a href="#">K-water연구원</a></li>
+                            <li><a href="#">K-water 인재개발원</a></li>
+                            <li><a href="#">지방상수도포털(Water-pos)</a></li>
+                            <li><a href="#">K-water 공공데이터개방포털</a></li>
+                            <li><a href="#">K-water 물산업플랫폼</a></li>
+                            <li><a href="#">K-water 온라인청약시스템</a></li>
+                            <li><a href="#">K-water 전자조달시스템</a></li>
+                            <li><a href="#">국가가뭄정보포털</a></li>
+                            <li><a href="#">건설사업관리시스템</a></li>
+                            <li><a href="#">경인아라뱃길</a></li>
+                            <li><a href="#">국가지하수정보센터(GIMS)</a></li>
+                            <li><a href="#">댐사전검토협의회</a></li>
+                            <li><a href="#">부산에코델타시티</a></li>
+                            <li><a href="#">송산그린시티</a></li>
+                            <li><a href="#">수우회</a></li>
+                            <li><a href="#">부산 에코델타 스마트시티</a></li>
+                            <li><a href="#">시화지구지속가능발전협의회</a></li>
+                            <li><a href="#">시화호조력발전소</a></li>
+                            <li><a href="#">우리강이용도우미포털</a></li>
+                            <li><a href="#">워터웨이플러스(WW+)</a></li>
+                            <li><a href="#">환경 빅데이터 플랫폼</a></li>
+                            <li><a href="#">기술기준통합정보시스템</a></li>
+                        </ul>
                     </div>
                     <div class="ft-info">
                         <span>주소 : 34350 대전광역시 대덕구 신탄진로 200</span>

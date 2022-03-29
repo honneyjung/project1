@@ -95,6 +95,8 @@ html{overflow-x: hidden;}
     height: 161px;
     animation: flow 10s infinite;
     -webkit-animation: flow 10s infinite;
+    position: absolute;
+    z-index: 30;
 }
 @keyframes flow{
     0% {background-position: center center;}
@@ -916,11 +918,12 @@ html{overflow-x: hidden;}
     box-shadow: rgba(221, 221, 221, 0.57)5px 5px 20px 0px;
     margin: 24px 0 0 2%;
     position: relative;
-    /* overflow: hidden; */
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+
 }
 #news .n-popup .img_control_slider img{
     height: 266px;
-    border-radius: 20px 20px 0 0;
 }
 #news .n-popup .imgcontrols{
     background: #ffffff;
@@ -942,6 +945,12 @@ html{overflow-x: hidden;}
     line-height: 21px;
     top: 50px;
 }
+#news .n-popup .bx-wrapper .bx-controls .bx-pager{
+    position: absolute;
+    right: 38px;
+    top: 230px;
+    z-index: 10;
+}
 #news .n-popup .imgcontrols span{
     text-indent: -999999px;
     display: block;
@@ -959,7 +968,7 @@ html{overflow-x: hidden;}
 }
 #news .img_controls .imgcontrols span.prev a{
     background-image: url(../images/news/n-left.png);
-    right: 75px;
+    right: 76px;
 }
 #news .img_controls .imgcontrols span.play a{
     background-image: url(../images/news/n-play.png);
