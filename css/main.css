@@ -37,11 +37,11 @@ html{overflow-x: hidden;}
 
 /* #main-visual */ 
 #main-visual{
-    width: 100%;
+    max-width: 100%;
 }
 #main-visual .main-bg{
     background: url(../images/main/m-bg.jpg) no-repeat center;
-    width: 100%;
+    max-width: 100%;
     height: 937px;
     top: 37px;
     position: relative;
@@ -56,8 +56,8 @@ html{overflow-x: hidden;}
     transform: translateX(-50%) scale(.75);
 }
 .main-bg i img{
-    width: 794px;
-    height: 189px;
+    max-width: 794px;
+    max-height: 189px;
     transform:translateY(-100%);
     animation: move 1s ease 0.3s forwards;
 }
@@ -72,7 +72,7 @@ html{overflow-x: hidden;}
 }
 #k-contents{
     width: 100%;
-    height: 937px;
+    max-height: 937px;
     background: #f5fcff;
     position: relative;
 }
@@ -94,7 +94,6 @@ html{overflow-x: hidden;}
     width: 100%;
     height: 161px;
     animation: flow 10s infinite;
-    -webkit-animation: flow 10s infinite;
     position: absolute;
     z-index: 30;
 }
@@ -132,8 +131,8 @@ html{overflow-x: hidden;}
 
 /* k-ltt-box */
 #k-contents .k-ltt-box{
-    width: 468px;
-    height: 266px;
+    max-width: 468px;
+    max-height: 266px;
     padding: 28px 0 0 38px;
     margin-bottom:17px;
     border-radius: 20px 0;
@@ -177,8 +176,8 @@ html{overflow-x: hidden;}
 
 /* k-ltbt-box */
 #k-contents .k-ltbt-box{
-    width: 468px;
-    height: 193px;
+    max-width: 468px;
+    max-height: 193px;
     padding: 28px 0 0 38px;
     border-radius: 20px 0;
     box-shadow: 2px 2px 15px 0 rgba(63, 68, 138, 0.15);
@@ -209,66 +208,89 @@ html{overflow-x: hidden;}
 
 /* k-mid-box */
 #k-contents .k-mid-box{
-    width: 468px;
+    max-width: 468px;
     height: 475px;
     margin: 0 18px 0 18px;
     border-radius: 20px 20px 0 0;
     box-shadow: 2px 2px 15px 0 rgba(63, 68, 138, 0.15);
-    background: url(../images/k-water/k-popup.jpg);
-    background-position: 0,0;
-    animation: sprite 30s infinite;
+    position: relative;
+    overflow: hidden;
 }
-@keyframes sprite{
-    0% {background-position: 0%;}
-    20% {background-position: -468px;}
-    40% {background-position: -936px;}
-    60% {background-position: -1404px;}
-    80% {background-position: -1872px;}
+#k-contents .k-mid-box .img_control_slider img{
+    height: 475px;
 }
-#k-contents .k-mid-box .control-bar{
+#k-contents .k-mid-box .imgcontrols{
     width: 468px;
     height: 56px;
     background: #18263b;
     padding: 14px 25px 14px 25px;
-    position: relative;
+    position: absolute;
     top: 419px;
 }
-#k-contents .k-mid-box .control-bar strong{
+#k-contents .k-mid-box .imgcontrols strong{
     color: #ffffff;
     font-size: 20px;
     font-weight: 400;
 }
-#k-contents .k-mid-box .control-bar span{
-    color: #ffffff;
-    font-size: 17px;
-    margin: 1px 23px 0 164px;
-    letter-spacing: 2px;
-}
-#k-contents .k-mid-box .control-bar .lf-btn{
+#k-contents .k-mid-box .imgcontrols span{
     text-indent: -999999px;
-    background: url(../images/k-water/k-pop-leftarrow.png) no-repeat;
     width: 10px;
     height: 17px;
-    margin-top: 5px;
 }
-#k-contents .k-mid-box .control-bar .pl-btn{
-    text-indent: -999999px;
-}
-#k-contents .k-mid-box .control-bar .st-btn{
-    text-indent: -999999px;
-    background: url(../images/k-water/k-pop-stop.png) no-repeat;
-    width: 9px;
-    height: 14px;
-    margin: 7px 18px 0 18px;
-}
-#k-contents .k-mid-box .control-bar .nx-btn{
-    text-indent: -999999px;
-    background: url(../images/k-water/k-pop-rightarrow.png) no-repeat;
+#k-contents .k-mid-box .imgcontrols span a{
+    background-repeat: no-repeat;
+    text-indent: -9999999em;
     width: 10px;
     height: 17px;
-    margin-top: 5px;
+    display: inline-block;
+    background-size: 100%;
+    position: absolute;
+    top: 17px;
 }
+#k-contents .k-mid-box .imgcontrols span.prev a{
+    background-image: url(../images/k-water/k-pop-leftarrow.png);
+    margin-top: 5px;
+    right: 81px;
 
+}
+#k-contents .k-mid-box .imgcontrols span.next a{
+    background-image: url(../images/k-water/k-pop-rightarrow.png);
+    margin-top: 5px;
+    right: 25px;
+}
+#k-contents .k-mid-box .bx-wrapper .bx-controls .bx-controls-auto .bx-controls-auto-item{
+    width: 10px;
+    height: 17px;
+}
+#k-contents .k-mid-box .bx-wrapper .bx-controls .bx-controls-auto .bx-controls-auto-item a.bx-start{
+    text-indent: -9999999px;
+    background: url(../images/k-water/k-pop-play.png) no-repeat center center;
+    width: 10px;
+    height: 17px;
+    position: absolute;
+    top: 441px;
+    right: 51px;
+    z-index: 30;
+}
+#k-contents .k-mid-box .bx-wrapper .bx-controls .bx-controls-auto .bx-controls-auto-item a.bx-stop{
+    text-indent: -9999999px;
+    background: url(../images/k-water/k-pop-stop.png) no-repeat center center;
+    width: 10px;
+    height: 17px;
+    position: absolute;
+    top: 441px;
+    right: 54px;
+    z-index: 30;
+}
+#k-contents .k-mid-box .bx-wrapper .bx-controls .bx-pager{
+    position: absolute;
+    color: #ffffff;
+    top: 435px;
+    z-index: 10;
+    font-size: 17px;
+    right: 114px;
+    letter-spacing: -1.5px;
+}
 /* k-rt-box */
 #k-contents .k-rt-box{
     width: 468px;
@@ -277,7 +299,7 @@ html{overflow-x: hidden;}
     margin-bottom: 17px;
     border-radius: 20px 0;
     box-shadow: 2px 2px 15px 0 rgba(63, 68, 138, 0.15);
-    background: url(../images/k-water/k-family.png)no-repeat center center/cover;
+    background: url(../images/k-water/k-family.png) no-repeat center center/cover;
 }
 #k-contents .k-rt-box span{
     background: url(../images/k-water/k-arrow-bk.png) no-repeat;
@@ -287,7 +309,6 @@ html{overflow-x: hidden;}
     text-indent: -9999px;
     margin-bottom: 38px;
     transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
     display: block;
     text-align: left;
 }
@@ -350,9 +371,9 @@ html{overflow-x: hidden;}
 
 /* service */
 #service {
-    background: url(../images/service/s-bg.jpg)no-repeat top center;
+    background: url(../images/service/s-bg.jpg) no-repeat top center;
     width: 100%;
-    padding-top: 120px;
+    max-height: 100vh;
 }
 #service h3::before{
     content: "";
@@ -362,6 +383,7 @@ html{overflow-x: hidden;}
     height: 34px;
     display: block;
     padding-bottom: 20px;
+    margin-top: 160px;
 }
 #service h3{
     font-size: 42px;
@@ -431,7 +453,7 @@ html{overflow-x: hidden;}
     right: -50px;
     top: 50%;
     margin-top: -5px;
-    background: url(../images/service/s-arrow.png)no-repeat center center;
+    background: url(../images/service/s-arrow.png) no-repeat center center;
     transition: all .3s ease;
 }
 #service .s-left-box ul li a:hover:after{
@@ -567,7 +589,7 @@ html{overflow-x: hidden;}
 #service .s-botl-box .botl-top li a::before{
     content: "";
     display: block;
-    background: url(../images/service/s-ico3.png)no-repeat center center/contain;
+    background: url(../images/service/s-ico3.png) no-repeat center center/contain;
     width: 48px;
     height: 45px;
     position: absolute;
@@ -671,7 +693,7 @@ html{overflow-x: hidden;}
     right: -50px;
     top: 50%;
     margin-top: -5px;
-    background: url(../images/service/s-arrow.png)no-repeat center center;
+    background: url(../images/service/s-arrow.png) no-repeat center center;
     transition: all .3s ease;
 }
 #service .s-right-box ul li a:hover:after{
@@ -682,7 +704,7 @@ html{overflow-x: hidden;}
 /* news */
 #news{
     width: 100%;
-    background: #f6f6f6 url(../images/news/news-bg.png)no-repeat right bottom;
+    background: #f6f6f6 url(../images/news/news-bg.png) no-repeat right bottom;
     overflow: hidden;
 }
 #news h3::before{
@@ -712,12 +734,15 @@ html{overflow-x: hidden;}
 #news .news-all-box{
     display: flex;
     flex-wrap: wrap;
-    width: 1440px;
+    max-width: 1440px;
+}
+#news .news-all-box .noti-all-box{
+    display: flex;
 }
 #news .n-noti-box1{
     width: 338px;
     height: 198px;
-    box-shadow: rgba(221, 221, 221, 0.57)5px 5px 20px 0px;
+    box-shadow: rgba(221, 221, 221, 0.57) 5px 5px 20px 0px;
     background: #ffffff;
     border-radius: 20px 0;
     padding: 20px 25px;
@@ -770,12 +795,11 @@ html{overflow-x: hidden;}
     text-indent: -99999999px;
     width: 16px;
     height: 16px;
-    background: url(../images/news/n-plus.png)no-repeat center center;
+    background: url(../images/news/n-plus.png) no-repeat center center;
     position: relative;
     left: 270px;
     bottom: 17px;
     transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
 }
 #news .news-all-box div .more:hover,#news .news-all-box div .more:active{
     transform: rotate(180deg);
@@ -784,7 +808,7 @@ html{overflow-x: hidden;}
 #news .n-noti-box2{
     width: 338px;
     height: 198px;
-    box-shadow: rgba(221, 221, 221, 0.57)5px 5px 20px 0px;
+    box-shadow: rgba(221, 221, 221, 0.57) 5px 5px 20px 0px;
     background: #ffffff;
     border-radius: 20px 0;
     padding: 20px 25px;
@@ -793,7 +817,7 @@ html{overflow-x: hidden;}
 #news .n-noti-box3{
     width: 338px;
     height: 198px;
-    box-shadow: rgba(221, 221, 221, 0.57)5px 5px 20px 0px;
+    box-shadow: rgba(221, 221, 221, 0.57) 5px 5px 20px 0px;
     background: #ffffff;
     border-radius: 20px 0;
     padding: 20px 25px;
@@ -802,7 +826,7 @@ html{overflow-x: hidden;}
 #news .n-noti-box4{
     width: 338px;
     height: 198px;
-    box-shadow: rgba(221, 221, 221, 0.57)5px 5px 20px 0px;
+    box-shadow: rgba(221, 221, 221, 0.57) 5px 5px 20px 0px;
     background: #ffffff;
     border-radius: 20px 0;
     padding: 20px 25px;
@@ -817,11 +841,11 @@ html{overflow-x: hidden;}
 #news .n-webzines{
     width: 338px;
     height: 266px;
-    box-shadow: rgba(221, 221, 221, 0.57)5px 5px 20px 0px;
+    box-shadow: rgba(221, 221, 221, 0.57) 5px 5px 20px 0px;
     border-radius: 20px 0;
     margin-top: 24px;
     padding: 20px 25px;
-    background: url(../images/news/n-webzine.gif)no-repeat left center;
+    background: url(../images/news/n-webzine.gif) no-repeat left center;
     position: relative;
     cursor: pointer;
 }
@@ -876,10 +900,13 @@ html{overflow-x: hidden;}
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
 }
+#news .pop_ul{
+    display: flex;
+}
 #news .n-movies{
     width: 338px;
     height: 266px;
-    box-shadow: rgba(221, 221, 221, 0.57)5px 5px 20px 0px;
+    box-shadow: rgba(221, 221, 221, 0.57) 5px 5px 20px 0px;
     border-radius: 20px 20px 0 0;
     margin: 24px 0 0 2%;
     overflow: hidden;
@@ -898,6 +925,9 @@ html{overflow-x: hidden;}
     font-weight: 400;
     line-height: 15px;
 }
+#news .news-all-box .pop_ul input,#news .news-all-box .pop_ul .radio_box{
+    display: none;
+}
 #news .n-movies iframe{
     width: 100%;
     height: 82%;
@@ -906,7 +936,7 @@ html{overflow-x: hidden;}
 #news .n-card-news{
     width: 338px;
     height: 266px;
-    box-shadow: rgba(221, 221, 221, 0.57)5px 5px 20px 0px;
+    box-shadow: rgba(221, 221, 221, 0.57) 5px 5px 20px 0px;
     border-radius: 20px 20px 0 0;
     margin: 24px 0 0 2%;
     background: url(../images/news/n-card-img1.jfif) no-repeat center top/cover;
@@ -915,12 +945,11 @@ html{overflow-x: hidden;}
 #news .n-popup{
     width: 338px;
     height: 266px;
-    box-shadow: rgba(221, 221, 221, 0.57)5px 5px 20px 0px;
+    box-shadow: rgba(221, 221, 221, 0.57) 5px 5px 20px 0px;
     margin: 24px 0 0 2%;
     position: relative;
     border-radius: 20px 20px 0 0;
     overflow: hidden;
-
 }
 #news .n-popup .img_control_slider img{
     height: 266px;
@@ -938,18 +967,35 @@ html{overflow-x: hidden;}
     font-weight: 400;
     line-height: 15px;    
 }
-#news .n-popup .img_controls .custom_pager{
+#news .n-popup .bx-wrapper .bx-controls .bx-controls-auto .bx-controls-auto-item a.bx-start{
+    text-indent: -9999999999px;
+    background: url(../images/news/n-play.png) no-repeat center center;
+    background-size: 90%;
+    width: 10px;
+    height: 15px;
     position: absolute;
-    right: -50px;
-    letter-spacing: 2px;
-    line-height: 21px;
-    top: 50px;
+    top: 235px;
+    right: 45px;
+    z-index: 10;
+}
+#news .n-popup .bx-wrapper .bx-controls .bx-controls-auto .bx-controls-auto-item a.bx-stop{
+    text-indent: -9999999999px;
+    background: url(../images/news/n-stop.png) no-repeat center center;
+    background-size: 80%;
+    width: 10px;
+    height: 15px;
+    position: absolute;
+    top: 235px;
+    right: 45px;
+    z-index: 10;
 }
 #news .n-popup .bx-wrapper .bx-controls .bx-pager{
     position: absolute;
-    right: 38px;
-    top: 230px;
+    right: 90px;
+    top: 231px;
     z-index: 10;
+    font-size: 15px;
+    letter-spacing: -1.3px;
 }
 #news .n-popup .imgcontrols span{
     text-indent: -999999px;
@@ -968,7 +1014,7 @@ html{overflow-x: hidden;}
 }
 #news .img_controls .imgcontrols span.prev a{
     background-image: url(../images/news/n-left.png);
-    right: 76px;
+    right: 67px;
 }
 #news .img_controls .imgcontrols span.play a{
     background-image: url(../images/news/n-play.png);
@@ -983,7 +1029,7 @@ html{overflow-x: hidden;}
 /* culture */
 #culture{
     width: 100%;
-    background: #e8f4ff url(../images/culture/culture-bg.png)no-repeat left bottom;
+    background: #e8f4ff url(../images/culture/culture-bg.png) no-repeat left bottom;
 }
 #culture h3::before{
     content: "";
@@ -1012,41 +1058,28 @@ html{overflow-x: hidden;}
     width: 708px;
     height: 473px;
     margin: 50px 24px 0 0;
-    padding: 46px 252px;
     border-top-left-radius: 20px;
-    background: url(../images/culture/c-darc.jpg) no-repeat center center;
+    background: url(../images/culture/c-museum.jpg) no-repeat center center;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
-#culture .c-left-box p{
-    padding-top: 30px;
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 15px;
-    line-height: 22px;
-    font-weight: 300;
-    display: block;
-}
-#culture .c-left-box p::before{
-    content: "";
-    display: block;
-    background: url(../images/culture/c-darc-ico.png)no-repeat center center/contain;
-    width: 45px;
-    height: 16px;
-    position: absolute;
-    left: 50%;
-    top: 45px;
-    transform: translateX(-50%);
+#culture .c-left-box .c-txt-box{
+    width: 250px;
+    text-align: center;
+    margin-top: 52px;
 }
 #culture .c-left-box strong{
     color: #ffffff;
-    font-size: 37px;
-    line-height: 45px;
-    letter-spacing: -2px;
+    font-size: 34px;
+    line-height: 42px;
+    letter-spacing: -1.5px;
 }
 #culture .c-left-box .c-more{
     display: block;
     width: 145px;
     height: 40px;
-    margin: 245px auto 0;
+    margin: auto;
     font-size: 14px;
     line-height: 38px;
     color: #ffffff;
@@ -1054,6 +1087,8 @@ html{overflow-x: hidden;}
     text-decoration: none;
     text-align: center;
     font-weight: 300;
+    position: absolute;
+    top: 381px;
 }
 #culture .c-left-box .c-more:hover{
     color: #222222;
@@ -1064,14 +1099,14 @@ html{overflow-x: hidden;}
     text-indent: -9999999px;
 }
 #culture .c-right-box{
-    width: 708px;
-    height: 473px;
+    max-width: 708px;
+    max-height: 473px;
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
 }
 #culture .c-right-box .c-rtop-box{
-    width: 708px;
+    max-width: 708px;
     height: 224px;
     margin-bottom: 24px;
     display: flex;
@@ -1128,7 +1163,7 @@ html{overflow-x: hidden;}
 /* incruit */
 #incruit{
     width: 100%;
-    background: url(../images/incruit/incruit-bg.jpg)no-repeat center center;
+    background: url(../images/incruit/incruit-bg.jpg) no-repeat center center;
     position: relative;
     overflow: hidden;
 }
@@ -1241,7 +1276,7 @@ html{overflow-x: hidden;}
 #incruit div div .i-more{
     width: 22px;
     height: 22px;
-    background: url(../images/incruit/i-more.png)no-repeat center center;
+    background: url(../images/incruit/i-more.png) no-repeat center center;
     text-indent: -9999999px;
     transition: all 0.3s ease;
     display: block;
@@ -1260,7 +1295,7 @@ html{overflow-x: hidden;}
     width: 496px;
     height: 322px;
     margin-top: 49px;
-    background: url(../images/incruit/inc.png)no-repeat left;
+    background: url(../images/incruit/inc.png) no-repeat left;
 }
 #incruit .i-right-box{
     width: 30%;
@@ -1295,7 +1330,7 @@ html{overflow-x: hidden;}
     width: 28px;
     height: 28px;
     text-indent: -9999999px;
-    background: url(../images/incruit/i-new.png)no-repeat center center;
+    background: url(../images/incruit/i-new.png) no-repeat center center;
     display: block;
 }
 #incruit .i-right-box .i-list ul li p span.i-sj{
@@ -1318,7 +1353,7 @@ html{overflow-x: hidden;}
     font-weight: 300;
     line-height: 24px;
     text-align: left;
-    width: 252px;
+    max-width: 252px;
     vertical-align: middle;
     padding: 17px 0px 21px 0px;
 }

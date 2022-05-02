@@ -1,9 +1,12 @@
 /*!
- * fullPage 2.9.7
+ * fullPage 3.0.7
  * https://github.com/alvarotrigo/fullPage.js
- * MIT licensed
  *
- * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ * @license GPLv3 for open source use only
+ * or Fullpage Commercial License for commercial use
+ * http://alvarotrigo.com/fullPage/pricing/
+ *
+ * Copyright (C) 2018 http://alvarotrigo.com/fullPage - A project by Alvaro Trigo
  */
 html.fp-enabled,
 .fp-enabled body {
@@ -51,6 +54,10 @@ html.fp-enabled,
     position: relative;
 }
 .fp-controlArrow {
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
     position: absolute;
     z-index: 4;
     top: 50%;
@@ -91,15 +98,15 @@ html.fp-enabled,
 #fp-nav {
     position: fixed;
     z-index: 100;
-    margin-top: -142px;
-    top: 50.5%;
+    margin-top: -32px;
+    top: 50%;
     opacity: 1;
-    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
 }
-#fp-nav.right {
-    right: 37px;
+#fp-nav.fp-right {
+    right: 17px;
 }
-#fp-nav.left {
+#fp-nav.fp-left {
     left: 17px;
 }
 .fp-slidesNav{
@@ -113,10 +120,10 @@ html.fp-enabled,
     right: 0;
     margin: 0 auto !important;
 }
-.fp-slidesNav.bottom {
+.fp-slidesNav.fp-bottom {
     bottom: 17px;
 }
-.fp-slidesNav.top {
+.fp-slidesNav.fp-top {
     top: 17px;
 }
 #fp-nav ul,
@@ -129,17 +136,11 @@ html.fp-enabled,
     display: block;
     width: 14px;
     height: 13px;
-    margin: 42px 0 0 0;
+    margin: 7px;
     position:relative;
 }
 .fp-slidesNav ul li {
     display: inline-block;
-}
-#fp-nav ul li:nth-child(6):active,#fp-nav ul li{
-    color: #ffffff;
-}
-#fp-nav ul li:nth-child(7){
-    display: none;
 }
 #fp-nav ul li a,
 .fp-slidesNav ul li a {
@@ -151,26 +152,37 @@ html.fp-enabled,
     cursor: pointer;
     text-decoration: none;
 }
-
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span{
+    height: 12px;
+    width: 12px;
+    margin: -6px 0 0 -6px;
+    border-radius: 100%;
+ }
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
     border-radius: 50%;
     position: absolute;
     z-index: 1;
-    height: 7px;
-    width: 7px;
+    height: 4px;
+    width: 4px;
     border: 0;
-    background: #555;
+    background: #333;
     left: 50%;
     top: 50%;
     margin: -2px 0 0 -2px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 #fp-nav ul li:hover a span,
 .fp-slidesNav ul li:hover a span{
     width: 10px;
     height: 10px;
     margin: -5px 0px 0px -5px;
-    background: #3d66c4;
 }
 #fp-nav ul li .fp-tooltip {
     position: absolute;
@@ -193,10 +205,10 @@ html.fp-enabled,
     width: auto;
     opacity: 1;
 }
-#fp-nav ul li .fp-tooltip.right {
+#fp-nav ul li .fp-tooltip.fp-right {
     right: 20px;
 }
-#fp-nav ul li .fp-tooltip.left {
+#fp-nav ul li .fp-tooltip.fp-left {
     left: 20px;
 }
 .fp-auto-height.fp-section,
@@ -210,34 +222,15 @@ html.fp-enabled,
 .fp-responsive .fp-auto-height-responsive .fp-tableCell {
     height: auto !important;
 }
-#fp-nav ul li:nth-child(1) a:after{
-    display: none;
-}
-#fp-nav ul li a.active:after {
-    opacity: 1;
-    visibility: visible;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 46px;
-    letter-spacing: -.9px;
-}
-#fp-nav ul li a.active span{
-    display: block;
-    width: 25px;
-    height: 36px;
-    top: -8px;
-    left: 9px;
-    margin-left: -12.5px;
-    background: url(../images/nav/fp-nav_active.png) no-repeat center center;
-    text-indent: -99999px;
-}
-#fp-nav ul li a span.active_wh{
-    color: white;
-    background: url(../images/nav/fp-nav_active_wh.png) no-repeat center center;
-}
-#fp-nav ul li:nth-child(3) a.active span,#fp-nav ul li:nth-child(6) a.active span{
-    background: url(../images/nav/fp-nav_active_wh.png) no-repeat center center;
-}
-.fp-viewing-sec6:active #fp-nav ul li a span{
-    background: #ffffff;
+
+/*Only display content to screen readers*/
+.fp-sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }

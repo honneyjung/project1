@@ -2,7 +2,8 @@
 $(document).ready(function() {
 	$("#fullpage").fullpage({
         navigation:true,
-		
+		//paddingTop: '120px',
+		responsiveWidth: 480,
         afterLoad:function (a,b,c) {
             if(b=="section_wh"){
                 $("#fp-nav ul li:nth-child(3) span").addClass("active_wh")
@@ -15,27 +16,28 @@ $(document).ready(function() {
 
 // bx 슬라이드
 $(function () {
-    customSlide=$(".img_control_slider").bxSlider({
+    customSlide1=$(".n-popup .img_control_slider").bxSlider({
         pager:true,
         pagerType:'short',
         controls:true,
-        prevSelector:".img_controls .imgcontrols .prev",
-        nextSelector:".img_controls .imgcontrols .next",
+        prevSelector:".n-popup .imgcontrols .prev",
+        nextSelector:".n-popup .imgcontrols .next",
         auto:true,
-        autocontrols:true,
+        autoControls:true,
+		autoControlsCombine:true,
     });
-    // var pagers="";
-    // var pagersWrap=$(".img_controls .custom_pager");
-    // var mySliders=$(".img_control_slider img");
-
-    // mySliders.each(function(i, j){
-    //     if(i < mySliders.length - 2){
-    //       pagers += "<span>" + (i+1) +"</span>";
-    //     }
-    //     // pagersWrap.html(`/ ${mySliders.length - 2}`);
-    //     pagersWrap.html(pagers);
-
-    // });
+});
+$(function () {
+    customSlide2=$(".k-mid-box .img_control_slider").bxSlider({
+        pager:true,
+        pagerType:'short',
+        controls:true,
+        prevSelector:".k-mid-box .imgcontrols .prev",
+        nextSelector:".k-mid-box .imgcontrols .next",
+        auto :true,
+        autoControls:true,
+		autoControlsCombine:true,
+    });
 });
 
 // footer : 관련사이트
@@ -143,4 +145,6 @@ function js_relate (){
 	}
 
 
-// 메인 배너 슬라이더
+// 모바일 햄버거메뉴 토글
+
+// 

@@ -55,6 +55,12 @@
 #footer .ft-link li:first-child a{
     color: #ffa975;
 }
+
+#footer p{
+    position: absolute;
+    top: 29px;
+    left: 39%;
+}
 #footer .ft-sns{
     position: absolute;
     right: 260px;
@@ -75,25 +81,25 @@
     text-indent: -999999px;
 }
 #footer .ft-sns li.yt a{
-    background: url(../images/footer/ft-yt.png)no-repeat center center;
+    background: url(../images/footer/ft-yt.png) no-repeat center center;
 }
 #footer .ft-sns li.fb a{
-    background: url(../images/footer/ft-fb.png)no-repeat center center;
+    background: url(../images/footer/ft-fb.png) no-repeat center center;
 }
 #footer .ft-sns li.in a{
-    background: url(../images/footer/ft-in.png)no-repeat center center;
+    background: url(../images/footer/ft-in.png) no-repeat center center;
 }
 #footer .ft-sns li.nb a{
-    background: url(../images/footer/ft-nb.png)no-repeat center center;
+    background: url(../images/footer/ft-nb.png) no-repeat center center;
 }
 #footer .ft-sns li.np a{
-    background: url(../images/footer/ft-np.png)no-repeat center center;
+    background: url(../images/footer/ft-np.png) no-repeat center center;
 }
 #footer .ft-sns li.tw a{
-    background: url(../images/footer/ft-tw.png)no-repeat center center;
+    background: url(../images/footer/ft-tw.png) no-repeat center center;
 }
 #footer .ft-sns li.kt a{
-    background: url(../images/footer/ft-kt.png)no-repeat center center;
+    background: url(../images/footer/ft-kt.png) no-repeat center center;
 }
 #footer .relate_site{
     position: absolute;
@@ -124,7 +130,7 @@
     margin-top: -5px;
     width: 16.2px;
     height: 9.9px;
-    background: url(../images/footer/ft-relate-site-arrow.png)no-repeat center 50%/contain;
+    background: url(../images/footer/ft-relate-site-arrow.png) no-repeat center 50%/contain;
     transform: rotate(-180deg);
     transition: all 0.3s ease;
 }

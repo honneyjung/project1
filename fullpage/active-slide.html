@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Active Slide - fullPage.js</title>
+		<meta name="author" content="Matthew Howell" />
+		<meta name="description" content="fullPage continuous scrolling demo." />
+		<meta name="keywords" content="fullpage,jquery,demo,scroll,loop,continuous" />
+		<meta name="Resource-type" content="Document" />
+		<style>
+			/* 스킵 내비게이션 */
+			#skip {
+				position: relative;
+			}
+			#skip a {
+				position: absolute;
+				left: 0px;
+				top: -35px;
+				border: 1px solid #fff;
+				color: #fff;
+				background: #333;
+				line-height: 30px;
+				width: 140px;
+				text-align: center;
+			}
+			#skip a:active,
+			#skip a:focus {
+				top: 0;
+				z-index: 99999999999;
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="fullpage.css" />
+		<link rel="stylesheet" type="text/css" href="examples.css" />
+	</head>
+	<body>
+		<div id="skip"><a href="#section0">aaa</a><a href="#section1">nnnn</a><a href="#section2">sss</a></div>
+		<ul id="menu">
+			<li data-menuanchor="firstPage" class="active"><a href="#firstPage">First slide</a></li>
+			<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+			<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+		</ul>
+
+		<div id="fullpage">
+			<div class="section" id="section0">
+				<h1>Section 1</h1>
+			</div>
+			<div class="section active" id="section1">
+				<div class="slide" id="slide1">
+					<div class="intro">
+						<h1>Slide 2.1</h1>
+						<iframe data-src="auto-height.html"></iframe>
+					</div>
+				</div>
+				<div class="slide active" id="slide2">
+					<div class="intro">
+						<h1>Slide 2.2</h1>
+						<p>We are using the class `active` on this section and in this particular horizontal slide. This way it will appear on the viewport on page load, instead of the 1st section 1st slide.</p>
+						<p>You can apply the same logic to horizontal slides</p>
+					</div>
+				</div>
+				<div class="slide" id="slide3">
+					<h1>Slide 2.3</h1>
+				</div>
+			</div>
+			<div class="section" id="section2">
+				<div class="intro">
+					<h1>Section 3</h1>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="fullpage.js"></script>
+		<script type="text/javascript" src="examples.js"></script>
+		<script type="text/javascript">
+			var myFullpage = new fullpage("#fullpage", {
+				sectionsColor: ["#1bbc9b", "#4BBFC3", "#7BAABE", "whitesmoke", "#ccddff"],
+				anchors: ["firstPage", "secondPage", "3rdPage", "4thpage", "lastPage"],
+				menu: "#menu",
+				lazyLoad: true,
+				keyboardScrolling: true,
+				animateAnchor: true,
+				recordHistory: true,
+			});
+		</script>
+	</body>
+</html>
